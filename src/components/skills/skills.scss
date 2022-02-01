@@ -1,0 +1,21 @@
+#skills {
+  margin-top: 50px;
+  .images {
+    display: flex;
+    justify-content: center;
+    .image {
+      padding: 10px;
+      height: 50px;
+      width: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #skills {
+    .images {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+}

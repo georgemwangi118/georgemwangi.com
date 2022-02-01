@@ -1,0 +1,77 @@
+$greenColor: #00ffbb;
+.hero {
+  margin-top: 250px;
+  height: 80vh;
+
+  .intro_container {
+    display: flex;
+    margin-top: 10em;
+    justify-content: space-between;
+
+    .intro {
+      padding: 2em;
+      h4 {
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+      }
+      h1 {
+        text-transform: capitalize;
+        font-size: 72px;
+        line-height: 86px;
+        font-weight: bold;
+      }
+      h3 {
+        color: $greenColor;
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        //width: 350px;
+        margin-bottom: 20px;
+        .skill {
+          color: #00ffbb;
+        }
+      }
+      .hireMe_link {
+        text-decoration: none;
+        background-color: $greenColor;
+        color: #000;
+        border-radius: 50px;
+        padding: 10px 20px;
+        margin-top: 30px;
+        &:hover {
+          color: red;
+        }
+      }
+    }
+    .hero_img {
+      margin-right: 50px;
+      img {
+        width: 550px;
+        height: 550px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .hero {
+    height: auto;
+    .intro_container {
+      .intro {
+        align-self: center;
+        text-align: center;
+      }
+      .hero_img {
+        display: none;
+      }
+    }
+  }
+}

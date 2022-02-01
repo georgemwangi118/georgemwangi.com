@@ -1,0 +1,103 @@
+#contact {
+  height: 90vh;
+  .contact_container {
+    .contact_header {
+      h3 {
+        font-size: 16px;
+        line-height: 19px;
+        color: #00ffbb;
+        font-weight: 400;
+      }
+      h1 {
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 700;
+      }
+      p {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
+    .contact_forms {
+      display: flex;
+      justify-content: space-between;
+
+      .left_form {
+        margin-left: 30px;
+        margin-top: 50px;
+
+        .reachMe {
+          p {
+          }
+        }
+      }
+      .right_form {
+        margin-top: 50px;
+        margin-right: 50px;
+
+        form {
+          .form {
+            input[type="text"] {
+              margin-bottom: 20px;
+              width: 100%;
+              padding: 10px;
+              box-sizing: border-box;
+              border-radius: 10px;
+              background: #212121;
+              color: #fff;
+            }
+            .email-tel {
+              margin-bottom: 10px;
+              input[type="email"],
+              input[type="tel"] {
+                margin-right: 5px;
+                padding: 10px;
+                background: #212121;
+                border-radius: 10px;
+                color: #fff;
+              }
+            }
+            textarea {
+              margin-bottom: 20px;
+              width: 100%;
+              padding: 10px;
+              box-sizing: border-box;
+              border-radius: 10px;
+              background: #212121;
+              color: #fff;
+            }
+            .btn {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #contact {
+    height: auto;
+    .contact_container {
+      .contact_header {
+      }
+      .contact_forms {
+        flex-direction: column;
+        .left_form {
+        }
+        .right_form {
+          form {
+            .form {
+              input {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
