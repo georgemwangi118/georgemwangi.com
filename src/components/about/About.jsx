@@ -2,6 +2,9 @@ import React from "react";
 import "./about.scss";
 import { saveAs } from "file-saver";
 import image from "./../../images/me.jpg";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const About = () => {
   const saveFile = () => {
@@ -43,6 +46,38 @@ const About = () => {
               on.
             </p>
 
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                marginBottom: "10px",
+              }}
+            >
+              <a
+                href="https://twitter.com/mr_robot118"
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: "#fff", textDecoration: "none" }}
+              >
+                <TwitterIcon /> : <span>I tweet about Javascript</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/george-mwangi-47057215b/"
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: "#fff", textDecoration: "none" }}
+              >
+                <LinkedInIcon /> : <span>Keeping up with the world</span>
+              </a>
+              <a
+                href="https://github.com/georgemwangi118"
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: "#fff", textDecoration: "none" }}
+              >
+                <GitHubIcon /> : <span>See my projects</span>
+              </a>
+            </div>
             <button className="btn" onClick={saveFile}>
               Download Resume
             </button>

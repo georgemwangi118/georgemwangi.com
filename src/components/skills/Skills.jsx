@@ -16,6 +16,7 @@ import figma from "../../images/skills/figma.png";
 const Skills = () => {
   return (
     <div className="container" id="skills">
+      <h4 className="text-center">My Skills</h4>
       <div className="images">
         <img className="image" src={figma} alt="" />
         <img className="image" src={html} alt="" />
