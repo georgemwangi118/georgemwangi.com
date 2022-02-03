@@ -1,5 +1,8 @@
 import React from "react";
 import "./footer.scss";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Footer = () => {
   return (
@@ -15,21 +18,21 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fab fa-twitter"></i>
+            <TwitterIcon />
           </a>
           <a
             href="https://www.linkedin.com/in/george-mwangi-47057215b/"
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fab fa-linkedin-in"></i>
+            <LinkedInIcon />
           </a>
           <a
             href="https://github.com/georgemwangi118"
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fab fa-github"></i>
+            <GitHubIcon />
           </a>
         </div>
       </div>

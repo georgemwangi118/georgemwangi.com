@@ -1,5 +1,8 @@
 import React from "react";
 import "./contact.scss";
+import EmailIcon from "@mui/icons-material/Email";
+import CallIcon from "@mui/icons-material/Call";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 const Contact = () => {
   return (
@@ -17,17 +20,17 @@ const Contact = () => {
           <div className="left_form">
             <div className="reachMe">
               <p>
-                Location: <span>Nairobi, Kenya</span>
+                <LocationOnIcon /> <span>Nairobi, Kenya</span>
               </p>
             </div>
             <div className="reachMe">
               <p>
-                email: <span>geomwans@gmail.com</span>
+                <EmailIcon /> <span>geomwans@gmail.com</span>
               </p>
             </div>
             <div className="reachMe">
               <p>
-                direct contact: <span>+254 741433059</span>
+                <CallIcon /> <span>+254 741433059</span>
               </p>
             </div>
           </div>
