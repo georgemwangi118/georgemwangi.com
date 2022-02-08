@@ -1,14 +1,31 @@
-#footer {
-  height: 100px;
-  .footer {
-    padding-top: 30px;
+.footer {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .footer-logo {
+    font-size: 24px;
+  }
+  .copyright {
+    margin: auto 0;
+    p {
+      font-size: 14px;
+    }
+  }
+  .icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .icons {
-      a {
-        color: #fff;
-      }
+    a {
+      color: #fff;
+      padding-left: 10px;
     }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .footer {
+    flex-direction: column;
+    height: auto;
   }
 }
