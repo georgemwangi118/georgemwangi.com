@@ -1,7 +1,7 @@
 import React from "react";
 import "./portfolio.scss";
 import { projects } from "../../data/projects";
-import image from "../../images/projects/uberEat.png";
+//import image from "../../images/projects/uberEat.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Portfolio = () => {
@@ -17,7 +17,11 @@ const Portfolio = () => {
             style={{ width: "18rem", margin: 10 }}
             key={index}
           >
-            <img className="card-img-top" src={image} alt={project.alt} />
+            <img
+              className="card-img-top"
+              src={project.image}
+              alt={project.alt}
+            />
             <div className="card-body">
               <h5 className="card-title" style={{ color: "#000" }}>
                 {project.name}
