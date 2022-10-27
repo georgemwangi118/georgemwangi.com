@@ -8,13 +8,14 @@
       img {
         margin: 50px auto;
         display: block;
-        height: 550px;
+        height: 100%;
         width: 456px;
         border-radius: 10px;
       }
     }
     .desc_container {
       margin: 50px auto;
+      align-self: center;
       .desc {
         margin-right: 40px;
         .skills {

@@ -1,15 +1,13 @@
 import React from "react";
 import "./about.scss";
 import { saveAs } from "file-saver";
-import image from "./../../images/me.jpg";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import image from "./../../images/profile.png";
+import { Email, GitHub, Twitter, LinkedIn } from "@mui/icons-material";
 
 const About = () => {
   const saveFile = () => {
     saveAs(
-      "https://drive.google.com/file/d/1MJUvW9brvhTVJr0q4K2jBRWtu44b25p8/view?usp=sharing",
+      "https://drive.google.com/file/d/1cwaldPOUygmoCQEP8LFjUh-Uf6SL8Ul6/view?usp=sharing",
       "resume.pdf"
     );
   };
@@ -17,7 +15,7 @@ const About = () => {
     <div className="container" id="about">
       <div className="about row">
         <div className="img_container col-sm-6">
-          <img src={image} alt="me sitted on a chair" />
+          <img src={image} alt="me" />
         </div>
         <div className="desc_container col-sm-6">
           <div className="desc">
@@ -54,12 +52,20 @@ const About = () => {
               }}
             >
               <a
-                href="https://twitter.com/mr_robot118"
+                href="/"
                 target="_blank"
                 rel="noreferrer"
                 style={{ color: "#fff", textDecoration: "none" }}
               >
-                <TwitterIcon /> : <span>I tweet about Javascript</span>
+                <Email /> : <span>geomwans@gmail.com</span>
+              </a>
+              <a
+                href="https://twitter.com/georges_code"
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: "#fff", textDecoration: "none" }}
+              >
+                <Twitter /> : <span>I tweet about Javascript</span>
               </a>
               <a
                 href="https://www.linkedin.com/in/george-mwangi-47057215b/"
@@ -67,7 +73,7 @@ const About = () => {
                 rel="noreferrer"
                 style={{ color: "#fff", textDecoration: "none" }}
               >
-                <LinkedInIcon /> : <span>Keeping up with the world</span>
+                <LinkedIn /> : <span>Keeping up with the world</span>
               </a>
               <a
                 href="https://github.com/georgemwangi118"
@@ -75,7 +81,7 @@ const About = () => {
                 rel="noreferrer"
                 style={{ color: "#fff", textDecoration: "none" }}
               >
-                <GitHubIcon /> : <span>See my projects</span>
+                <GitHub /> : <span>See my projects</span>
               </a>
             </div>
             <button className="btn" onClick={saveFile}>
