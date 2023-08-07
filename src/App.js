@@ -4,7 +4,6 @@ import "./App.scss";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { DotGroup, Landing, Navbar, Projects } from "./pages";
 import { motion } from "framer-motion";
-import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
 
 function App() {
@@ -47,17 +46,7 @@ function App() {
         </motion.div>
       </div>
 
-      <div className="w-5/6 mx-auto md:h-full">
-        <motion.div
-          margin="0 0 0 0"
-          amount="all"
-          onViewportEnter={() => setSelectedPage("about")}
-        >
-          <About setSelectedPage={setSelectedPage} />
-        </motion.div>
-      </div>
-
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto">
         <motion.div
           margin="0 0 0 0"
           amount="all"
